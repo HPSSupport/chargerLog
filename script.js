@@ -10,7 +10,3 @@ xhttp.send();
 for(i = 0; i <= xmlDoc.getElementsByTagName('root').length; i++){
 	$('#chargers tbody').append('<td>'+xmlDoc.getElementsByTagName('entry'[i]));
 }
-
-function update(){
-	
-}
