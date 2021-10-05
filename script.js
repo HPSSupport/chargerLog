@@ -1,13 +1,18 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-	console.log(xhttp.readyState + ' '+ xhttp.status);
-if (xhttp.readyState == 4 && xhttp.status == 200) {
-
-    var xmlDoc = xml.responseXML;
-}
-xhttp.open("GET", "log.xml", true);
+    if (this.readyState == 4 && this.status == 200) {
+    myFunction(this);
+    }
+};
+xhttp.open("GET", "books.xml", true);
 xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 }
+
 for(i = 0; i <= xmlDoc.getElementsByTagName('root').length; i++){
 	$('#chargers tbody').append('<td>'+xmlDoc.getElementsByTagName('entry'[i]));
 }
