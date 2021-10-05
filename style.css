@@ -1,13 +1,13 @@
 body{
 	color: white;
 }
-#tableHeads{
+#tableHeads, form{
 	background-color: #0D47A1;
 	max-width: 70%;
 	position: relative;
 	left: 10%;
-	margin: 20px;
 	outline: solid 2px black;
+	padding: 20px;
 }
 #tableHeads th, #tableHeads td{
 	position: relative;
@@ -19,4 +19,7 @@ body{
 td{
 	outline: solid 2px black;
 }
+input{
+	color: black;
+	max-width: 20%;
 }
