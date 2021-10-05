@@ -23,3 +23,6 @@ input{
 	color: black;
 	max-width: 20%;
 }
+tr input{
+	max-width: 100%
+}
