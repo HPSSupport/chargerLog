@@ -6,9 +6,8 @@ window.addEventListener('beforeunload', function (e) {
 });
 function add(){
 	alert("Page refresh will remove all listings!");
-	var toSet = '<tr>'+'<td>' + document.getElementById("date").value + '</td>' + '<td>'+document.getElementById("grade").value + '</td>' + '<td class="final">' + document.getElementById("name").value + '</td>'+'</tr>';
+	var toSet = '<tr>'+'<td>' + document.getElementById("date").value + '</td>' + '<td>'+document.getElementById("grade").value + '</td>' + '<td>' + document.getElementById("name").value + '</td>'+'<td><input type="button" value="Remove" onclick="remove(this)"></td>'+'</tr>';
 	$('#chargers tbody').append(toSet);
-	$('#chargers tbody tr').append('<td><input type="button" value="Remove" onclick="remove(this)"></td>');
 	document.getElementById("date").value = '';
 	document.getElementById("grade").value = '';
 	document.getElementById("name").value = '';
