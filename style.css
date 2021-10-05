@@ -1,0 +1,22 @@
+body{
+	color: white;
+}
+#tableHeads{
+	background-color: #0D47A1;
+	max-width: 70%;
+	position: relative;
+	left: 10%;
+	margin: 20px;
+	outline: solid 2px black;
+}
+#tableHeads th, #tableHeads td{
+	position: relative;
+	left: 20px;
+	padding: 10px;
+	outline: solid 2px black;
+	
+}
+td{
+	outline: solid 2px black;
+}
+}
