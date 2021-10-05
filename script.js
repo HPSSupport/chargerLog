@@ -1,5 +1,6 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
+	console.log(xhttp.responseXML);
 if (xhttp.readyState == 4 && xhttp.status == 200) {
 
     var xmlDoc = xml.responseXML;
