@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
     myFunction(this);
     }
 };
-xhttp.open("GET", "log.xml", true);
+xhttp.open("GET", "log.xml", false);
 xhttp.send();
 
 function myFunction(xml) {
